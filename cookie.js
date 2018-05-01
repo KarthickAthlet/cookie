@@ -1,4 +1,5 @@
 (function(){
+	/*getting cookie value*/
 	function getCookie(cname) {
 		var name = cname + "=";
 		var ca = document.cookie.split(';');
@@ -9,11 +10,11 @@
 		}
 		return "";
 	}
-
+	/*setting session cookie value*/
 	function setSessionCookie(cname, cvalue) {
 		document.cookie = cname + "=" + cvalue + ";path=/";
 	}
-
+	/*setting cookie value*/
 	function setCookie(cname, cvalue, exdays) {
 		var d = new Date();
 		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
